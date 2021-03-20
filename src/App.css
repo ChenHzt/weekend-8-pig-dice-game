@@ -1,0 +1,140 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top, #c94b4b, #4b134f) no-repeat center center fixed;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  height: 90%;
+  width:90%;
+  background-color: rgba(255,255,255,1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.scoreBoard{
+  display: flex;
+  background-color: #f7f7f7;
+  width: 100%;
+  /* background-color: white; */
+  justify-content: center;
+
+}
+
+.scoreBoard > .player-global-score{
+  /* margin: 0 20px; */
+  text-align: center;
+  width:100%;
+  padding:1rem;
+} 
+
+.player-global-score--active{
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color:#EB4D4D;
+}
+
+
+.currentScore{
+  /* background-color: crimson; */
+  background-color: #505050;
+  padding:  15px 30px;
+  border-radius: 10px;
+  margin: 10px 0;
+  text-align: center;
+  color: white;
+  display: inline-block;
+}
+
+h1{
+  display: block;
+  text-align: center;
+}
+
+.boardContainer{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  height: 100%;
+}
+
+.dice{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  /* height: 130px; */
+}
+
+.currentPlayerTitle{
+  font-size: 3.5em;
+}
+
+.face{
+background-color: #f7f7f7 !important;
+box-shadow: inset 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+
+}
+
+.dot{
+  background: #EB4D4D !important; 
+}
+
+.customButton{
+  display: inline-block;
+  padding: 5px 0;
+}
+
+
+.customButton{
+  width: 120px;
+  height: 2rem;
+  font-weight: 500;
+  color: #000;
+  background-color: transparent;
+  border: #ED7033 2px solid;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 2px;
+}
+
+.customButton:enabled:hover {
+  /* background-color: #2EE59D; */
+  color: #fff;
+  background-color: #ED7033;
+  transform: translateY(-3px);
+}
+
+.customButton:disabled{
+  background-color: transparent;
+  border: grey 2px solid;
+  color: grey;
+}
+
+.customButton:disabled:hover{
+  cursor: not-allowed;
+
+}
